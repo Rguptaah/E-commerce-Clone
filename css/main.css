@@ -5,25 +5,20 @@
 }
 
 body {
-    background-color: skyblue;
+    background-color: rgb(184, 206, 214);
     color: black;
+    overflow-x: hidden;
 }
 
-header {
-    width: 100vw;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-}
-
+/* ---------------------------offer area-------------------------- */
 .outer {
     width: 100vw;
-    height: 5vh;
+    height: 30px;
     background-color: rgb(224, 40, 148);
     color: white;
     text-align: center;
     margin: auto;
-    justify-content: baseline;
+    line-height: 1.2rem;
 }
 
 .outer p {
@@ -32,12 +27,21 @@ header {
     margin: auto;
 }
 
+/* --------------------header-area-------------------- */
+header {
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
 .header-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    height: 10vh;
+    height: 70px;
+    line-height: 10px;
 }
 
 .header-content h1 {
@@ -66,13 +70,281 @@ header {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
+    padding-bottom: 1px;
 }
 
-.icons .fa {
+.sticky nav ul li a:hover {
+    /* border-bottom: 2px solid rgb(224, 40, 148); */
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: 0.5s;
+}
+
+@keyframes slide {
+    0% {
+        transition: border-bottom 2s, forward
+    }
+}
+
+.icons .fas {
     border: 1px solid black;
     padding: 7px;
     border-radius: 50%;
     outline: none;
     margin: 0px 10px;
+}
+
+.icons .fas:hover {
+    background-color: rgb(224, 40, 148);
+    color: white;
+    transition-duration: 0.8s;
+}
+
+/* ---------------------main-area---------------------- */
+main {
+    width: 100vw;
+}
+
+/* ------------------------caraousel-area------------------ */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item desc,
+.item img {
+    width: 50%;
+}
+
+.desc small,
+.desc h2,
+.desc p,
+.button {
+    margin: 15px auto;
+    text-transform: capitalize;
+}
+
+.btn {
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+section.caraousel {
+    background: transparent;
+}
+
+/* ---------------------products-area-------------------------- */
+
+
+section {
+    background: white;
+}
+
+.shop-cards {
+    height: 50vh;
+}
+
+.shop-cards h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.card {
+    width: 25%;
+    height: 240px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.c1 {
+    background: url('../assets/images/bg1.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.c2 {
+    background: url('../assets/images/bg4.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.c3 {
+    background: url('../assets/images/bg3.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.data:nth-child(odd) {
+    margin: 60px 20px;
+}
+
+.data h3 {
+    font-size: 25px;
+    padding: 5px 15px;
+}
+
+.data p {
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+.data a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid white;
+    margin-left: 15px;
+}
+
+/* .data:hover{
+    -ms-zoom-animation:500;
+
+} */
+ul.flex span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 1px;
+    border: 1px solid grey;
+    margin-right: 1px;
+}
+
+ul.flex span li {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 14px;
+    height: 14px;
+    background: grey;
+}
+
+ul.flex li {
+    display: inline-block;
+    list-style: none;
+}
+
+ul.flex li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul.flex li a:hover,
+.active:hover {
+    color: black;
+    cursor: pointer;
+}
+
+ul.flex div {
+    margin: 0px 10px;
+}
+
+ul.flex div:hover {
+    cursor: pointer;
+    color: black !important;
+}
+
+/* -----------------------Trends products area------------------------------ */
+#trends,
+#featured,
+#special {
+    width: 100vw;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+figure img {
+    width: 200px;
+    height: 200px;
+    margin: 0px 50px;
+
+}
+
+figcaption {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+/* -------------------------grid area---------------------------- */
+
+.grid {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.column1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/grid-images/grid_1.jpg') no-repeat center center/cover;
+    /* height: 400px; */
+    grid-row: 1/3;
+
+}
+
+.column2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/grid-images/grid_2.jpg') no-repeat center center/cover;
+    height: 200px;
+}
+
+.column3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/grid-images/grid_3.jpg') no-repeat center center/cover;
+    height: 200px;
+}
+
+.column4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/grid-images/grid_4.jpg') no-repeat center center/cover;
+    height: 200px;
+    grid-column: 2/4;
+}
+
+.column1 div {
+    position: relative;
+    top: 180px;
+    color: white;
+    text-align: center;
+    font-size: 20px !important;
+}
+
+.column2 div,
+.column3 div,
+.column4 div {
+    position: relative;
+    top: 100px;
+    /* bottom: 200px; */
+    /* left: 100px; */
+    /* right: 100px;  */
+    color: white;
+    text-align: center;
+    font-size: 20px !important;
+}
+
+.column1 div a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 20px auto;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+
+/* -----------------------All Products area-------------------------- */
+#all {
+    width: 100vw;
+    display: flex;
 }
