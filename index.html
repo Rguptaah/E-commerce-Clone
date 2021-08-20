@@ -38,9 +38,8 @@
                 </div>
             </div>
         </header>
-
-        <main>
-            <section class="caraousel">
+        <section class="caraousel">
+            <div id="slider">
                 <div class="item item1">
                     <div class="desc">
                         <small>new inspiration 2020</small>
@@ -77,11 +76,13 @@
                     </div>
                     <img src="assets/images/banner_3.png" alt="banner3">
                 </div>
-                <div class="arrow flex">
-                    <a href="#"><i class="fa fa-arrow-circle-left"></i></a>
-                    <a href="#"><i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-            </section>
+            </div>
+            <div class="arrow flex" id="jump">
+                <a href="#"><i class="fa fa-2x fa-arrow-circle-left"></i></a>
+                <a href="#"><i class="fa fa-2x fa-arrow-circle-right"></i></a>
+            </div>
+        </section>
+        <main>
             <section class="shop-cards">
                 <h1>Allow your style to match your ambition</h1>
                 <div class="flex">
@@ -333,7 +334,7 @@
                 </span>
                 <li><a href="#All">All products</a></li>
             </ul>
-            <section>
+            <section id="brand">
                 <div id="all" class="products">
                     <div class="gallery">
                         <figure>
@@ -625,6 +626,8 @@
                             </figcaption>
                         </figure>
                     </div>
+                </div>
+                <div id="brand-slide">
                     <div class="brand-slide">
                         <div class="brand">
                             <img src="assets/brand_images/brand_1.png" alt="">
@@ -633,14 +636,14 @@
                             <img src="assets/brand_images/brand_2.png" alt="">
                             <img src="assets/brand_images/brand_1.png" alt="">
                         </div>
-                        <div class="brand">
+                        <div class="brand none">
                             <img src="assets/brand_images/brand_1.png" alt="">
                             <img src="assets/brand_images/brand_2.png" alt="">
                             <img src="assets/brand_images/brand_3.png" alt="">
                             <img src="assets/brand_images/brand_2.png" alt="">
                             <img src="assets/brand_images/brand_1.png" alt="">
                         </div>
-                        <div class="brand">
+                        <div class="brand none">
                             <img src="assets/brand_images/brand_1.png" alt="">
                             <img src="assets/brand_images/brand_2.png" alt="">
                             <img src="assets/brand_images/brand_3.png" alt="">
@@ -650,7 +653,7 @@
                     </div>
                 </div>
             </section>
-            <ul>
+            <ul class="flex">
                 <span>
                     <li></li>
                 </span>
@@ -716,59 +719,55 @@
                     </figure>
                 </div>
             </section>
-            <ul>
+            <ul class="flex">
                 <span>
                     <li></li>
                 </span>
                 <li><a href="">Latest news</a></li>
             </ul>
             <section>
-                <div class="news">
-                    <figure>
-                        <img src="assets/grid-images/grid_1.jpg" alt="">
-                        <figcaption>
-                            <h2>Styling white shirts after a cool day</h2>
-                            <p>By admin</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo sunt
-                                eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="news">
-                    <figure>
-                        <img src="assets/grid-images/grid_2.jpg" alt="">
-                        <figcaption>
-                            <h2>Styling white shirts after a cool day</h2>
-                            <p>By admin</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo sunt
-                                eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="news">
-                    <figure>
-                        <img src="assets/grid-images/grid_3.jpg" alt="">
-                        <figcaption>
-                            <h2>Styling white shirts after a cool day</h2>
-                            <p>By admin</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo sunt
-                                eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="news">
-                    <figure>
-                        <img src="assets/grid-images/grid_4.jpg" alt="">
-                        <figcaption>
-                            <h2>Styling white shirts after a cool day</h2>
-                            <p>By admin</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo sunt
-                                eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.</p>
-                        </figcaption>
-                    </figure>
+                <div id="news-slide">
+                    <div class="news">
+                        <figure>
+                            <img src="assets/grid-images/grid_1.jpg" alt="">
+                            <figcaption>
+                                <h2>Styling white shirts after a cool day</h2>
+                                <p>By admin</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo
+                                    sunt
+                                    eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.
+                                </p>
+                                <button class="btn">read more</button>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/grid-images/grid_2.jpg" alt="">
+                            <figcaption>
+                                <h2>Styling white shirts after a cool day</h2>
+                                <p>By admin</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo
+                                    sunt
+                                    eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.
+                                </p>
+                                <button class="btn">read more</button>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/grid-images/grid_3.jpg" alt="">
+                            <figcaption>
+                                <h2>Styling white shirts after a cool day</h2>
+                                <p>By admin</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus officia, quis illo
+                                    sunt
+                                    eos tenetur, odit obcaecati perferendis mollitia nihil commodi? Consequatur, velit.
+                                </p>
+                                <button class="btn">read more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </section>
-            <ul>
+            <ul class="grey flex">
                 <span>
                     <li></li>
                 </span>
@@ -801,7 +800,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
                             </p>
-                            <p><i class="fas fa-rupee-sign"></i>2000.99</p>
+                            <p><i class=" fas fa-rupee-sign"></i>2000.99</p>
                         </figcaption>
                     </figure>
                     <figure>
@@ -835,20 +834,66 @@
                 </div>
             </section>
             <div class="icon">
-                <div class="icon aero">
-                    <i class="fas fa-plane"></i>
+                <div class="circle aero">
+                    <span><i class="fas fa-plane"></i></span>
+                    <p>FREE SHIPPING WORLD WIDE</p>
                 </div>
-                <div class="icon card">
-                    <i class="fas fa-credit-card"></i>
+                <div class="circle credit">
+                    <span> <i class="fa fa-credit-card"></i></span>
+                    <p>100% MONEY BACK GUARANTEE</p>
                 </div>
-                <div class="icon payment">
-                    <i class="fa fa-credit-card-alt"></i>
+                <div class="circle payment">
+                    <span><i class="far fa-credit-card"></i></span>
+                    <p>MANY PAYMENT GATWAYS</p>
                 </div>
-                <div class="icon support">
-                    <i class="fas fa-headset"></i>
+                <div class="circle support">
+                    <span><i class="fas fa-headset"></i></span>
+                    <p>24/7 ONLINE SUPPORT</p>
                 </div>
             </div>
         </main>
+
+        <footer class="footer">
+            <div class="section">
+                <h2>extras</h2>
+                <ul>
+                    <li><a href="">brands</a></li>
+                    <li><a href="">gift certificates</a></li>
+                    <li><a href="">affiliates</a></li>
+                    <li><a href="">special</a></li>
+                    <li><a href="">site map</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>information</h2>
+                <ul>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">terms & conditions</a></li>
+                    <li><a href="">contact us</a></li>
+                    <li><a href="">site map</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>my account</h2>
+                <ul>
+                    <li><a href="">my account</a></li>
+                    <li><a href="">order history</a></li>
+                    <li><a href="">wish list</a></li>
+                    <li><a href="">newsletters</a></li>
+                    <li><a href="">returns</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>contact us</h2>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> 42 Dream House, Dreammy street, 7131 Dreamville, USA</li>
+                    <li><i class="fa fa-envelope"></i> company@gmail.com</li>
+                    <li><i class="fa fa-phone"></i> 456-456-4512</li>
+                    <li><i class="fa fa-paper-plane"></i> dream city,USA</li>
+                </ul>
+            </div>
+        </footer>
     </body>
 
 </html>
