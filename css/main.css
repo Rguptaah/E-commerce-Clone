@@ -570,17 +570,17 @@ figcaption {
 
 .news {
     position: relative;
-    width: 100%;
+    width: 300%;
     left: 0;
-    animation: 20s nslider infinite;
+    animation: 20s slider infinite;
 }
 
-.news figure {
+.news .figure {
     width: 33.33%;
     float: left;
 }
 
-@keyframes nslider {
+/* @keyframes nslider {
     0% {
         left: 0;
     }
@@ -616,15 +616,17 @@ figcaption {
     100% {
         left: -95%;
     }
-}
+} */
 
-.news {
+.news,
+.figure {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 
 }
+
 
 .news figure {
     background: lightblue;
